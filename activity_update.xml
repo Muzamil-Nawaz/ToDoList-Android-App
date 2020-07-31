@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addtask"
+    >
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateTitle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_x="50dp"
+        android:layout_y="50dp"
+        android:hint="Title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#F7F7F7"
+            android:textColor="#464775"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateDescription"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_x="50dp"
+        android:layout_y="125dp"
+        android:hint="Description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#F7F7F7"
+            android:textColor="#464775"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/updateDate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_x="50dp"
+        android:layout_y="200dp"
+        android:hint="Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            android:background="#F7F7F7"
+            android:textColor="#464775"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CalendarView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_x="50dp"
+        android:layout_y="280dp"
+        android:background="#ffffff"></CalendarView>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_x="120dp"
+        android:layout_y="590dp"
+        android:text="Save changes"
+        android:textColor="#41b396"
+        android:background="#141314"
+        android:onClick="updateTask"
+
+        style="?attr/materialButtonOutlinedStyle"></Button>
+
+
+</AbsoluteLayout>
